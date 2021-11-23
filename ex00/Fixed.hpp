@@ -27,7 +27,7 @@ private:
 	int fixedNum;
 
 	// 소수 비트 수를 저장하기 위한 정적 상수, 이 상수의 자리수는 9이다.
-	 const static int bitNum = 9;
+	 const static int bitNum = 8;
 
 
 };
