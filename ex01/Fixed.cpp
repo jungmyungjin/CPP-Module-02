@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/28 03:46:25 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/28 03:53:59 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.hpp"
 
 // 생성자 : 고정 소수점 값을 0으로 초기화
@@ -37,7 +49,7 @@ Fixed::~Fixed(void)
 Fixed &Fixed::operator=(const Fixed &ref)
 {
 	std::cout << "Assignation operator called" << std::endl;
-	this->value = ref.value;
+	value = ref.value;
 	return (*this);
 }
 
