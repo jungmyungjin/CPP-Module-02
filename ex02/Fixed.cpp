@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/28 03:59:06 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/28 04:06:08 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.hpp"
 
 std::ostream &operator<<(std::ostream &out, Fixed const &value)
@@ -25,7 +37,6 @@ Fixed::Fixed(const float num)
 // 복사 생성자
 Fixed::Fixed(Fixed const &ref)
 {
-//	value = ref.value;
 	*this = ref;
 }
 
@@ -123,7 +134,7 @@ Fixed Fixed::operator++()
 	return (*this);
 }
 
-Fixed Fixed::operator++(int)
+const Fixed Fixed::operator++(int)
 {
 	Fixed	tmp = *this;
 	value++;
@@ -136,7 +147,7 @@ Fixed Fixed::operator--()
 	return (*this);
 }
 
-Fixed Fixed::operator--(int)
+const Fixed Fixed::operator--(int)
 {
 	Fixed	tmp = *this;
 	value--;

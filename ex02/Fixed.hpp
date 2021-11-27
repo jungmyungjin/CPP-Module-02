@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/28 03:59:11 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/28 04:06:26 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FIXED_H
 #define FIXED_H
 #include <iostream>
@@ -53,9 +65,9 @@ public:
 
 	// 사전 증가, 사후 증가, 사전 감소 및 사후 감소 연산자
 	Fixed operator++();
-	Fixed operator++(int);
+	const Fixed operator++(int);
 	Fixed operator--();
-	Fixed operator--(int);
+	const Fixed operator--(int);
 
 	// 멤버함수
 	static Fixed min(const Fixed &ref1, const Fixed &ref2);
